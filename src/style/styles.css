@@ -1,11 +1,24 @@
 * {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: url(./images/bg_blue.jpg) !important;
+body#login,
+#register {
+  background: url(/src/images/bg_dark2.jpg) !important;
   background-size: cover;
+}
+
+body#change_pass {
+  background: url(/src/images/bg_dark.jpg) !important;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
 }
 
 .card_login {
@@ -24,14 +37,29 @@ body {
   border-bottom-left-radius: 0;
 }
 
-#form {
-  display: flex;
-}
-
 .card_login .title {
   margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.card_change_pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10rem;
+  width: auto;
+  height: 50%;
+  background-color: #fcfbfc;
+  padding: 0 5rem;
+  border-radius: 2rem;
+}
+
+#form {
+  display: flex;
 }
 
 img {
@@ -42,7 +70,7 @@ img {
 span {
   font-size: 1.5rem;
   text-align: center;
-  color: #2e2e2e !important;
+  color: #2e2e2e;
 }
 
 input {
@@ -53,13 +81,13 @@ input {
   padding: 1rem;
 }
 
+input#email:focus {
+  border-color: #1a1a1a;
+}
+
 input::placeholder {
   font-size: 0.8rem !important;
   padding: 0 0.5rem;
-}
-
-.btn_group {
-  /* margin: 1rem 0; */
 }
 
 button {
@@ -79,6 +107,14 @@ button {
 .checkbox_btn {
   text-align: center;
   font-size: 1rem;
+  padding: 0.375rem 0.75rem 0.375rem 0 !important;
+}
+
+.checkbox_btn,
+.btn-group,
+.btn_changepass:focus {
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .checkbox {
@@ -91,15 +127,34 @@ button {
   font-size: 1rem;
 }
 
+.btn_changepass span:hover {
+  color: #6c6c6c;
+}
+
 .btn_login {
-  background-color: #395de1;
+  background-color: #252424;
   margin: 0.2rem 0;
+}
+
+.btn_login:hover {
+  background-color: #1a1a1a;
+}
+
+.btn_login:focus {
+  background-color: #1a1a1a;
+  border: none;
 }
 
 .btn_register {
   color: #2e2e2e;
-  border: 2px solid #395de1;
+  border: 2px solid #252424;
   margin: 0.3rem 0;
+}
+
+.btn_register:hover {
+  background-color: #6c6c6c;
+  border: 2px solid #6c6c6c;
+  color: #fff;
 }
 
 .col-sm-1-12 {

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Login</title>
+    <title>Esqueci minha senha</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
 
-    <link href="./style/styles.css" rel="stylesheet" />
+    <link href="../style/styles.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -27,12 +27,13 @@
       rel="stylesheet"
     />
   </head>
-  <body id="login">
+  <body id="change_pass">
     <div class="container">
-      <div class="card_login">
+      <div class="card_change_pass">
         <div class="title">
-          <img class="logo" src="images/LOP.png" alt="Logotipo" />
-          <span>Fazer login</span>
+          <span>Esqueci minha senha</span>
+          <br />
+          <span>Preencha o e-mail para receber novas instruções de login</span>
         </div>
         <form id="form">
           <div class="form-group column">
@@ -40,78 +41,26 @@
               <input
                 type="email"
                 id="email"
-                placeholder="INSIRA SEU E-MAIL"
+                placeholder="E-mail cadastrado"
                 required
               />
-            </div>
-
-            <div class="col-sm-1-12">
-              <input
-                type="password"
-                id="password"
-                placeholder="INSIRA SUA SENHA"
-                required
-              />
-            </div>
-
-            <div class="bx_gp">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn checkbox_btn active">
-                  <input
-                    type="checkbox"
-                    name="Checkbox"
-                    class="checkbox"
-                    checked
-                    autocomplete="off"
-                  />
-                  Manter login
-                </label>
-              </div>
-
-              <a
-                name="Esqueci senha"
-                id=""
-                class="btn btn_changepass"
-                href="./pages/change_pass.html"
-                role="button"
-                ><span>Esqueci minha senha</span></a
-              >
             </div>
 
             <div class="form-group btn_group">
-              <button class="btn_login" type="submit">Entrar</button>
+              <button class="btn_login" type="submit">Enviar</button>
               <div class="col-sm-1-12">
                 <button
                   class="btn_register"
                   type="button"
-                  onclick="window.location.href='pages/register.html'"
+                  onclick="history.back()"
                 >
-                  Cadastrar
+                  Voltar
                 </button>
               </div>
             </div>
           </div>
         </form>
       </div>
-      <script>
-        const form = document.getElementById("form");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const emailValue = email.value;
-          const passwordValue = password.value;
-
-          localStorage.setItem(
-            "myLogin",
-            JSON.stringify({ email: emailValue, password: passwordValue })
-          );
-
-          window.location.href = "test.html";
-        });
-      </script>
     </div>
 
     <!-- Optional JavaScript -->
