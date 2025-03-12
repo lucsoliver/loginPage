@@ -28,7 +28,7 @@ Para instalar o projeto, siga estas etapas:
 ### • Clone este repositório.
 
 ```bash
-git clone https://github.com/loginPage
+git clone https://github.com/lucsoliver/loginPage.git
 ```
 
 ### • Acesse a pasta do projeto no terminal.
@@ -37,8 +37,3 @@ git clone https://github.com/loginPage
 cd loginPage
 ```
 
-## Comando para iniciar o projeto
-
-```bash
-run live server
-```
