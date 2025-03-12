@@ -149,6 +149,8 @@ button {
 }
 
 .checkbox_btn {
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 1rem;
   padding: 0.375rem 0.75rem 0.375rem 0;
@@ -164,6 +166,37 @@ button {
 .checkbox {
   width: auto;
 }
+
+input[type="checkbox"] {
+  appearance: none; 
+  width: 18px;
+  height: 18px;
+  border: 2px solid #6c6c6c; 
+  border-radius: 4px; 
+  background-color: white;
+  position:relative;
+  margin: 0 0.5rem;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #6c6c6c;
+  border-color: #252424;
+}
+
+input[type="checkbox"]::before {
+  content: '✔';
+  font-size: 0.7rem;
+  color: white;
+  display: none;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+}
+
 .btn_changepass {
   margin-bottom: 8px;
 }
@@ -283,6 +316,14 @@ button {
   .card_change_pass {
     margin: 0 1rem !important;
     padding: 2rem !important;
+  }
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  input[type="checkbox"]:before {
+    left: 2px;
+    top: -1px;
   }
 }
 @media only screen and (max-width: 375px) {
