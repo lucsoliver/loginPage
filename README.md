@@ -7,7 +7,7 @@ SITE → exemplo.com.br</p>
 
 # Sobre
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut orci eget magna venenatis dignissim. Cras hendrerit rutrum nulla eu suscipit. Maecenas viverra, odio sit amet aliquet volutpat, ligula diam gravida orci, vitae volutpat nisi orci sit amet tellus. Integer placerat enim vel libero rutrum ornare. Vestibulum a elementum orci.
+O projeto foi desenvolvido com o objetivo de praticar e aprimorar minhas habilidades, por meio da criação de uma página de login simples. A proposta foi simular uma interface de autenticação comum em aplicações web, focando na organização visual, responsividade e experiência do usuário.
 
 # Funcionalidades 
 
