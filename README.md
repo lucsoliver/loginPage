@@ -13,7 +13,7 @@ Esqueci minha senha
 
 # Sobre
 
-O projeto foi desenvolvido com o objetivo de praticar e aprimorar minhas habilidades, por meio da criação de uma página de login simples. A proposta foi simular uma interface de autenticação comum em aplicações web, focando na organização visual, responsividade e experiência do usuário.
+O projeto foi desenvolvido para praticar, por meio da criação de uma página de login simples. A proposta foi simular uma interface de autenticação comum em aplicação web, focando na organização visual, responsividade e experiência do usuário.
 
 
 # Instalação
